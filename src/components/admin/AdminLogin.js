@@ -54,6 +54,7 @@ export default function AdminLogin() {
     <>
       <div className="container margin-top-lg py-4 margin-top-80">
         <div className="row">
+          <h6 className='dfjcac'><strong>Email:</strong>&nbsp;admin@gmail.com &nbsp; &nbsp;<strong>Password:</strong>&nbsp;admin123</h6>
           <div className=" col-lg-3 col-sm-0"></div>
           <div className=" col-lg-6 col-sm-12 mini-container">
             <h1>Admin Login</h1>
