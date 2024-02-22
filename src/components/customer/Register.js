@@ -39,9 +39,7 @@ export default function Register() {
         window.scrollTo(0, 0);
         showToast('Registered Succesfully', 'success');
       } else {
-        navigate('/register');
-        const errorMsg = await json.errors[0].msg || json.error;
-        showToast(errorMsg, 'warn');
+        showToast('Something went wrong', 'warn');
       }
     } catch (error) {
       console.log(error);

@@ -83,6 +83,7 @@ export default function Homepage() {
                                                     <div>
                                                         <h6><span className='bold'>Booking Id:</span> &nbsp;<span className='text-primary'> {item._id}</span> </h6>
                                                         <h6><span className='bold'>Flight Number:</span> &nbsp;<span className='text-primary'> {item.flight[0].flightNumber}</span> </h6>
+                                                        <h6><span className='bold'>Time:</span> &nbsp;<span className='text-primary'> {item.flight[0].time}</span> </h6>
                                                         <h6><span className='bold'>FROM:</span> &nbsp;<span className='text-dark'> {item.flight[0].from}</span> </h6>
                                                         <h6><span className='bold'>TO:</span> &nbsp;<span className='text-dark'> {item.flight[0].to}</span> </h6>
                                                         <h6><span className='bold'>Persons:</span> &nbsp;<span className='text-dark'> {item.person}</span> </h6>

@@ -87,8 +87,8 @@ export default function Homepage() {
                           <div>
                             <h6><span className='bold'>Flight Number:</span> &nbsp;<span className='text-dark'> {item.flightNumber}</span> </h6>
                             <h6><span className='bold'>Time:</span> &nbsp;<span className='text-dark'> {item.time}</span> </h6>
-                            <h6><span className='bold'>FROM:</span> &nbsp;<span className='text-dark'> {item.from}</span> </h6>
-                            <h6><span className='bold'>TO:</span> &nbsp;<span className='text-dark'> {item.to}</span> </h6>
+                            <h6><span className='bold'>FROM:</span> &nbsp;<span className='text-dark'> {item.from.toUpperCase()}</span> </h6>
+                            <h6><span className='bold'>TO:</span> &nbsp;<span className='text-dark'> {item.to.toUpperCase()}</span> </h6>
                             <h6><span className='bold'>Seat Available:</span> &nbsp;<span className='text-primary'> {item.seating_capacity}</span> </h6>
                           </div>
                           <div className='row'>
@@ -101,7 +101,7 @@ export default function Homepage() {
 
                           <div className="d-flex flex-column mt-5">
                             <button onClick={() => { handleDelete(item._id) }} className="btn btn-danger btn-sm mt-2 bold fs-5 rounded" type="button">
-                              {processing === true ? <Spinner height='22' width='22' /> : 'Remove Flight'}
+                              Remove Flight
                             </button>
                           </div>
                         </div>
